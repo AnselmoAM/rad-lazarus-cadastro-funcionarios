@@ -5,7 +5,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
+  Menus;
 
 type
 
@@ -21,6 +22,11 @@ type
     Label6: TLabel;
     Label7: TLabel;
     Label8: TLabel;
+    MainMenu1: TMainMenu;
+    Arquivo: TMenuItem;
+    Ajuda: TMenuItem;
+    Sobre: TMenuItem;
+    Sair: TMenuItem;
     procedure BitBtn1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Label2Click(Sender: TObject);
@@ -28,6 +34,9 @@ type
     procedure Label5Click(Sender: TObject);
     procedure Label8Click(Sender: TObject);
     procedure Label9Click(Sender: TObject);
+    procedure ArquivoClick(Sender: TObject);
+    procedure AjudaClick(Sender: TObject);
+    procedure SairClick(Sender: TObject);
   private
 
   public
@@ -61,6 +70,21 @@ end;
 procedure TForm1.Label9Click(Sender: TObject);
 begin
   end;
+
+procedure TForm1.ArquivoClick(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.AjudaClick(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.SairClick(Sender: TObject);
+begin
+  Close;
+end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin

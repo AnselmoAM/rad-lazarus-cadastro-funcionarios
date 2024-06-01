@@ -4,9 +4,10 @@ object Form1: TForm1
   Top = 176
   Width = 736
   Caption = 'NewPicture Ltda. - Cadastro de Funcionários'
-  ClientHeight = 550
+  ClientHeight = 520
   ClientWidth = 736
   DesignTimePPI = 144
+  Menu = MainMenu1
   OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '2.2.6.0'
@@ -133,7 +134,7 @@ object Form1: TForm1
     Left = 608
     Height = 45
     Hint = 'Clique aqui para sair do sistema'
-    Top = 496
+    Top = 464
     Width = 113
     Caption = '&Sair'
     Glyph.Data = {
@@ -207,5 +208,25 @@ object Form1: TForm1
     ParentShowHint = False
     ShowHint = True
     TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 56
+    object Arquivo: TMenuItem
+      Caption = '&Arquivo'
+      OnClick = ArquivoClick
+      object Sair: TMenuItem
+        Caption = '&Sair'
+        ShortCut = 16472
+        OnClick = SairClick
+      end
+    end
+    object Ajuda: TMenuItem
+      Caption = '&Ajuda'
+      OnClick = AjudaClick
+    end
+    object Sobre: TMenuItem
+      Caption = '&Sobre'
+    end
   end
 end
