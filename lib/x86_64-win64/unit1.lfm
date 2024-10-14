@@ -223,6 +223,7 @@ object Form1: TForm1
     end
     object Ajuda: TMenuItem
       Caption = '&Ajuda'
+      ShortCutKey2 = 112
       OnClick = AjudaClick
     end
     object Sobre: TMenuItem
